@@ -2,7 +2,7 @@ const contenedorTareas = document.querySelector(".tareas");
 const forumulario = document.querySelector("form");
 const input = document.querySelector('form input[type="text"]');
 
-fetch("https://api-todo-wf2m.onrender.com/") //con este leemos toda la tarea de la api.
+fetch("https://api-todo-wf2m.onrender.com/api-todo") //con este leemos toda la tarea de la api.
 .then(respuesta => respuesta.json())
 .then(tareas => {
     tareas.forEach(({id,tarea,terminada}) => {
